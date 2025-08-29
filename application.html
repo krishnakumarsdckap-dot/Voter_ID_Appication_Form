@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter ID Application</title>
+    <link rel="stylesheet" href="application.css">
+</head>
+
+<body>
+
+    <!--  -->
+    <form action="voter id application" id="form id">
+        <header>
+
+            <center>
+                <h1 class="h1">Voter ID Application</h1>
+            </center>
+        </header>
+        <br>
+
+        <!-- personal form -->
+        <!-- personal details heading -->
+        <h2 class="h2">Personal Details</h2><br>
+        <!-- image upload -->
+        <label for="image" class="label"><b>Image (passport-size):</b></label><br>
+        <input type="file" class="inp" id="image" name="image" accept="image/*" required><br>
+        <!-- first name -->
+        <label for="firstName" class="label" id="firstName"><b>First Name:</b></label><br>
+        <input type="text" id="firstName" name="firstName" required><br>
+        <!-- last name -->
+        <label for="lastname" class="label" id="lastname"><b>Last Name:</b></label><br>
+        <input type="text" id="lastname" name="lastname" required><br>
+        <!-- date of birth -->
+        <label for="date of birth" class="label"><b>Date Of Birth:</b></label><br>
+        <input type="date" class="date" id="date of birth" name="date of birth" required><br>
+        <!-- cast -->
+        <label for="cast" class="label"><b>Caste:</b></label><br>
+        <input type="text" id="cast" name="cast" required><br>
+        <!-- religion -->
+        <label for="religion" class="label"><b>Religion:</b></label><br>
+        <input type="text" id="religion" name="religion" required><br>
+        <!-- nationality-->
+        <label for="nationality" class="label"><b>Nationality:</b></label><br>
+        <input type="text" id="nationality" name="name" value="India" readonly><br>
+        <!-- disability -->
+        <section>
+            <label for="disability" class="label"><b>Disability:</b></label><br>
+            <input type="radio" name="disability" value="No" required> NO
+            <input type="radio" name="disability" value="Yes" required> YES <br>
+        </section>
+        <!-- age -->
+        <label for="age" class="label"><b>Age:</b></label><br>
+        <input type="checkbox" id="age" name="age" required> I am 18 years older <br>
+        <!-- email -->
+        <label for="emailID" class="label"><b>Email ID:</b></label><br>
+        <input type="email" id="emailID" name="emailID" required><br>
+        <!-- phone number -->
+        <label for="phonenumber" class="label"><b> Phone Number:</b></label><br>
+        <input type="tel" id="phonenumber" name="phonenumber" required><br>
+        <!-- address details form -->
+        <!-- address details heading-->
+        <h2 class="h2">Address Details</h2><br>
+        <!-- house/door no -->
+        <label for="houseNumber" class="label"><b>House/Door no:</b></label><br>
+        <input type="text" id="houseNumber" name="houseNumber" required><br>
+        <!-- Street/Area/Locality/ -->
+        <label for="Street/Area/Locality/" class="label"><b>Street/Area/Locality:</b></label><br>
+        <input type="text" id="Street/Area/Locality/" name="Street/Area/Locality/" required><br>
+        <!-- google location -->
+        <label class="label"><b>Google Location:</b></label><br>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31089.167056383034!2d80.1706774895975!3d13.089939527534394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266b2082873a1%3A0x7f2b6f60e42a31f8!2sKoyambedu%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1756453046295!5m2!1sen!2sin"
+            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <!-- Residential: Town/Village  -->
+        <label for="Residential: Town / Village" class="label"><b>Residential: Town / Village:</b></label>
+        <select id="Residential: Town / Village" name="Residential: Town / Village" required>
+            <option value="">--Select--</option>
+            <option value="Town A">Anna Nagar</option>
+            <option value="Town B">Adyar</option>
+            <option value="Town C">Velachery</option>
+            <option value="Town D">Ambattur</option>
+            <option value="Town E">Saidapet</option>
+        </select>
+        <p></p> <br>
+
+        <!-- Taluk -->
+        <label for="Taluk" class="label"><b>Taluk:</b></label><br>
+        <input type="text" id="Taluk" name="Taluk" required><br>
+
+        <!-- Pincode -->
+        <label for="Pincode" class="label"><b>Pincode:</b></label><br>
+        <input type="text" id="Pincode" name="Pincode" pattern="[0-9]{6}" required><br>
+
+        <!-- District-->
+        <label for="District" class="label"><b>District:</b></label>
+        <select id="District" name="District" required>
+            <option value="">--Select District--</option>
+            <option value="Chennai">Salem</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Madurai">Chengalpattu</option>
+            <option value="Tiruchirappalli">Erode</option>
+            <option value="Salem">Chennai</option>
+        </select>
+        <p></p><br>
+
+
+        <!--  Certification details-->
+        <h2>Certification Details</h2><br>
+        <!--community certification  -->
+        <label for="community Certification" class="label"><b>Community Certification:</b></label> <br>
+        <input type="file" class="inp" id="community Certification" name="community Certification"
+            accept=".image,.pdf,.jpg,.png" required /><br>
+        <!-- Aadhar Card Certification -->
+        <label for="Aadhar Card Certification" class="label"><b>Aadhar Card Certification:</b></label><br>
+        <input type="file" class="inp" id="Aadhar Card Certification" name="Aadhar Card Certification"
+            accept=".image,.pdf,.jpg,.png" required /><br>
+        <!-- SSLC Marksheet & Transfer Certification -->
+        <label for="SSLC Marksheet & Transfer Certification" class="label"> <b>SSLC Marksheet & Transfer
+                Certification:</b></label><br>
+        <input type="file" class="inp" id="SSLC Marksheet & Transfer Certification"
+            name="SSLC Marksheet & Transfer Certification" accept=".image,.pdf,.jpg,.png" required /><br>
+        <!-- HSLC Marksheet & Transfer Certification -->
+        <label for="HSLC Marksheet & Transfer Certification" class="label"><b>HSLC Marksheet & Transfer
+                Certification:</b></label><br>
+        <input type="file" class="inp" id="HSLC Marksheet & Transfer Certification"
+            name="HSLC Marksheet & Transfer Certification" accept=".image,.pdf,.jpg,.png" required /><br>
+
+        <!-- footer -->
+        <footer>
+            <br>
+            <label for="signature" class="label2"><b>Signature</b></label> <br>
+            <input type="text" id="signature" name="signature" required><br>
+            <button class="btn">Sumit Application</button><br>
+
+        </footer>
+    </form>
+
+
+
+</body>
+
+</html>
